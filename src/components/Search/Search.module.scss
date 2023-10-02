@@ -1,0 +1,27 @@
+.root {
+    position: relative;
+  input {
+    background-image: url('/src/img/search.svg');
+    background-position-y: center;
+    background-position-x: 15px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid rgba($color: #000000, $alpha: 0.2);
+    width: 250px;
+    padding: 10px 35px 10px 45px;
+    &:focus {
+      border-color: #f24701;
+    }
+  }
+  svg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+  }
+}

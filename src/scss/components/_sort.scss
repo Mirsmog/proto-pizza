@@ -1,0 +1,67 @@
+@import '../variables';
+
+.sort {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+  margin-right: auto;
+  &__label {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
+    }
+
+    b {
+      margin-right: 8px;
+    }
+
+    span {
+      color: $orange;
+      border-bottom: 1px dashed $orange;
+      cursor: pointer;
+    }
+  }
+
+  &-order{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    label{
+      display: flex;
+      gap: 5px;
+    }
+  }
+
+  &__popup {
+    position: absolute;
+    left: 0;
+    margin-top: 15px;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 200px;
+
+    ul {
+      overflow: hidden;
+      li {
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background: rgba(254, 95, 30, 0.05);
+        }
+
+        &.active {
+          font-weight: bold;
+          color: $orange;
+        }
+      }
+    }
+  }
+}

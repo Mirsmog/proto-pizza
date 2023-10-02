@@ -1,0 +1,23 @@
+.root{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    img{
+        width: 180px;
+        height: auto;
+    }
+    span{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 220px;
+        color: gray;
+        margin-bottom: -40px;
+    }
+    p{
+        font-size: 24px;
+        opacity: .7;
+        font-weight: 400;
+    }
+}

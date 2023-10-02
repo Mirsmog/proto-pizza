@@ -1,0 +1,62 @@
+.root {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  :global {
+    li.selected {
+      background-color: #fe5f1e;
+      color: white;
+      opacity: 0.9;
+      border-color: transparent;
+      font-weight: 500;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+    li.previous,
+    li.next {
+      background-color: #282828;
+      color: white;
+      opacity: 0.8;
+
+      a{
+        line-height: 24px;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+    li.disabled {
+        opacity: .5;
+
+        a{
+            cursor: not-allowed;
+        }
+        &:hover{
+            opacity: .5;
+        }
+    }
+  }
+  li {
+    border-radius: 100px;
+    border: 1px solid #282828;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+  a {
+    padding: 10px;
+    color: inherit;
+    display: inline-block;
+    cursor: pointer;
+  }
+}
